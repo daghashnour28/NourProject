@@ -31,6 +31,10 @@ public class signUp extends AppCompatActivity {
         buttonLogin = findViewById(R.id.buttonLogin);
 
 
+
+
+
+
         textView1 = findViewById(R.id.textView1);
     }
 
