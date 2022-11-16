@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
     public void goToLogIn(View view){
-        Intent i = new Intent(this, log_in.class);
+        Intent i = new Intent(this, registerActivityLifecycleCallbacks().class);
         startActivity(i);
     }
 
