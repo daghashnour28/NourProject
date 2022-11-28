@@ -15,9 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    EditText editTextNumber,editTextNumber2;
-    Button buttonbplus,buttonminus;
-    TextView textviewresult;
+    Button buttonGoLogIn,buttonGoSignUp;
+    TextView textViewBakey;
 
 
     @Override
@@ -26,7 +25,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-//this method loads the menu design into this activity
+
+    public void goToSignIn(View view){
+        Intent i = new Intent(this, SignInActivity.class);
+        startActivity(i);
+    }
+
+    public void goToRegister(View view){
+        Intent i = new Intent(this, RegisterActivity.class);
+        startActivity(i);
+    }
+
+    //this method loads the menu design into this activity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.navigation_menu,menu);
@@ -44,15 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
         return true;
-    }
-    public void goToLogIn(View view){
-        Intent i = new Intent(this, registerActivityLifecycleCallbacks().class);
-        startActivity(i);
-    }
-
-    public void signup(View view){
-        Intent i = new Intent(this, signUp.class);
-        startActivity(i);
     }
 
     @Override
@@ -74,4 +75,6 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.show();
 
     }
+
+
 }

@@ -14,17 +14,16 @@
         android:theme="@style/Theme.NourDaghash"
         tools:targetApi="31">
         <activity
-            android:name=".textView1"
+            android:name=".RegisterActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
         <activity
             android:name=".log_in"
             android:exported="false" />
         <activity
-            android:name=".signUp"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityList"
+            android:name=".ListActivity"
             android:exported="false" />
         <activity
             android:name=".AboutActivity"

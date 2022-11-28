@@ -1,45 +1,46 @@
-package com.example.nourdaghash.;
+package com.example.nourdaghash;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelStore;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    Button buttonregister;
+public class RegisterActivity extends AppCompatActivity {
+    TextView textViewRegisterTitle;
     EditText editTextTextEmailAddress, editTextTextPassword;
-    Button buttonlogin;
-    SharedPreferences preferences;
+    Button buttonRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        editTextTextEmailAddress = findViewById(R.id.editTextEmail);
-        editTextTextPassword = findViewById(R.id.editTextPassword);
-        buttonlogin = findViewById(R.id.buttonLogin);
+        setContentView(R.layout.activity_register);
 
-        preferences = getSharedPreferences("userinfo", 0);
+        textViewRegisterTitle = findViewById(R.id.textViewRegisterTitle);
+        editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
+        editTextTextPassword = findViewById(R.id.editTextTextPassword);
+        buttonRegister = findViewById(R.id.buttonRegister);
     }
 
     public void login(View view) {
-        String input_mail = editTextTextEmailAddress.getText().toString();
-        String input_password = editTextTextEmailAddress.getText().toString();
+        String input_email = editTextTextEmailAddress.getText().toString();
+        String input_password = editTextTextPassword.getText().toString();
 
         String savedE = preferences.getString("username","");
         String savedP = preferences.getString("password", "");
 
-        if ((input_mail.equals(savedE)) && (input_password.equals(savedP)))
+        if ((input_email.equals(savedE)) && (input_password.equals(savedP)))
         {
-            Intent i = new Intent(this, CategoryActivity.class);
+            Intent i = new Intent(this, MainActivity2.class);
             startActivity(i);
         }
         else {
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.navigation_menu, menu);
         return true;
     }
 
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             //this is from where, and the second parameter is to where
             Intent i = new Intent(this, onMenuItemSelected().class);
             startActivity(i);
-        } else if (item.getItemId() == R.id.help_menu) {
+        } else if (item.getItemId() == R.id.settings_menu) {
         }
         return true;
     }
@@ -86,16 +87,16 @@ public class MainActivity extends AppCompatActivity {
         dialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                MainActivity.this.finish();
+                SignUpActivity.this.finish();
             }
         });
-        dialog.setIcon(R.drawable.ic_baseline_whatshot_24);
+        // dialog.setIcon(R.drawable.ic_baseline_whatshot_24);
         AlertDialog alertDialog = dialog.create();
         alertDialog.show();
     }
 
     public void register(View view) {
-        Intent i_register = new Intent(this, RegisterActivity.class);
+        Intent i_register = new Intent(this, MainActivity2.class);
         startActivity(i_register);
 
     }

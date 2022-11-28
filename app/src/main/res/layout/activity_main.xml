@@ -10,15 +10,15 @@
 
 
     <Button
-        android:id="@+id/log_in"
+        android:id="@+id/buttonGoSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="goToLogIn"
+        android:onClick="goToSignIn"
         android:shadowColor="#701D1D"
         android:text="Log In"
         android:textColorHighlight="#684F4F"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/sign_up"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGoToRegister"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,10 +27,10 @@
         tools:ignore="InvalidId" />
 
     <Button
-        android:id="@+id/sign_up"
+        android:id="@+id/buttonGoToRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="signup"
+        android:onClick="goToRegister"
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,8 +41,8 @@
         tools:ignore="OnClick" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="250dp"
+        android:id="@+id/textViewBakey"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_marginStart="99dp"
         android:layout_marginTop="258dp"
@@ -53,7 +53,7 @@
         android:text="BAKEY"
         android:textColor="#E3DA97"
         android:textSize="90sp"
-        app:layout_constraintBottom_toTopOf="@+id/log_in"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGoSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

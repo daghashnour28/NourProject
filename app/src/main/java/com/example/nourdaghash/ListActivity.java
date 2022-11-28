@@ -2,7 +2,6 @@ package com.example.nourdaghash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,7 +11,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ActivityList extends AppCompatActivity {
+public class ListActivity extends AppCompatActivity {
 
 ListView listView;
 
@@ -38,7 +37,7 @@ ListView listView;
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(ActivityList.this, "clicked item" + i + "" + arrayList.get(i).toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListActivity.this, "clicked item" + i + "" + arrayList.get(i).toString(), Toast.LENGTH_SHORT).show();
             }
         });
 
