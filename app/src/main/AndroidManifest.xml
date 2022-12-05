@@ -14,7 +14,7 @@
         android:theme="@style/Theme.NourDaghash"
         tools:targetApi="31">
         <activity
-            android:name=".CameraActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
@@ -22,9 +22,7 @@
         <activity
             android:name=".SignInActivity"
             android:exported="false" />
-        <activity
-            android:name=".log_in"
-            android:exported="false" />
+
         <activity
             android:name=".ListActivity"
             android:exported="false" />
@@ -32,7 +30,7 @@
             android:name=".AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CameraActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
