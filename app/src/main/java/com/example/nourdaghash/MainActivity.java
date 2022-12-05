@@ -15,8 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button buttonGoLogIn,buttonGoSignUp;
-    TextView textViewBakey;
+    private Button buttonGoLogIn,buttonGoToRegister;
+    private TextView textViewBakey;
 
 
     @Override
@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        buttonGoLogIn = findViewById(R.id.buttonGoSignIn);
+        buttonGoToRegister = findViewById(R.id.buttonGoToRegister);
+        textViewBakey = findViewById(R.id.textViewBakey);
     }
 
     public void goToSignIn(View view){
@@ -35,46 +38,5 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, RegisterActivity.class);
         startActivity(i);
     }
-
-    //this method loads the menu design into this activity
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.navigation_menu,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        //in case user chose about menu
-        if(item.getItemId()==R.id.about_menu){
-            //open the about activity when the about menu item selected
-            Intent i=new Intent(this,AboutActivity.class);
-            startActivity(i);
-        }else if (item.getItemId()==R.id.settings_menu){
-
-        }
-        return true;
-    }
-
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder dialog=new AlertDialog.Builder(this);
-        dialog.setTitle("back button was pressed!");
-        dialog.setMessage("are you sure you want to Exit");
-        //in case the user chose No,Nothing happens,the dialog class
-        dialog.setNegativeButton("No",null);
-        //when the user clicks on the yes button the application closes
-        dialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                MainActivity.this.finish();
-            }
-        });
-        dialog.setIcon(R.drawable.ic_baseline_cake_24);
-        AlertDialog alertDialog= dialog.create();
-        alertDialog.show();
-
-    }
-
 
 }
