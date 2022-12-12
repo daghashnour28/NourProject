@@ -48,7 +48,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
         if (view == buttonTakePhoto) {
             //Camera
 
-            if(checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+            f(checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
               requestPermissions(new String[]{Manifest.permission.CAMERA},CAMERA_REQUEST);
 
 }
