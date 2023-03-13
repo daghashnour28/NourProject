@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         buttonGoLogIn = findViewById(R.id.buttonGoSignIn);
         buttonGoToRegister = findViewById(R.id.buttonGoToRegister);
         textViewBakey = findViewById(R.id.textViewBakey);
+
+        Intent notification = new Intent(this, Receiver.class); PendingIntent pendingIntent = PendingIntent.getBroadcast (this, 1, notification, PendingIntent.FLAG_UPDATE_CURRENT); AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE); alarmManager.setRepeating(AlarmManager.RTC, System.currentTimeMillis(), 3000, pendingIntent);
     }
 
     public void goToSignIn(View view){
@@ -38,5 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, RegisterActivity.class);
         startActivity(i);
     }
+
+
 
 }
