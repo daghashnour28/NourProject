@@ -4,6 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +31,11 @@ public class MainActivity extends AppCompatActivity {
         buttonGoToRegister = findViewById(R.id.buttonGoToRegister);
         textViewBakey = findViewById(R.id.textViewBakey);
 
-        Intent notification = new Intent(this, Receiver.class); PendingIntent pendingIntent = PendingIntent.getBroadcast (this, 1, notification, PendingIntent.FLAG_UPDATE_CURRENT); AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE); alarmManager.setRepeating(AlarmManager.RTC, System.currentTimeMillis(), 3000, pendingIntent);
+        Intent notification = new Intent(this, Receiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast (this, 1, notification, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.RTC, System.currentTimeMillis(), 3000, pendingIntent);
     }
 
     public void goToSignIn(View view){
