@@ -8,7 +8,7 @@ import android.content.Intent;
 
 import androidx.annotation.Nullable;
 
-public class Receiver extends BroadcastReceiver {
+public class  Receiver extends BroadcastReceiver {
     @
             Override
     public void onReceive(Context context, Intent intent) {
