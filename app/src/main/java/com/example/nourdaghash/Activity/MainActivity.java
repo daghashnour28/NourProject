@@ -1,4 +1,4 @@
-package com.example.nourdaghash;
+package com.example.nourdaghash.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -16,6 +16,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.nourdaghash.R;
+import com.example.nourdaghash.Receiver;
+import com.example.nourdaghash.RegisterActivity;
+import com.example.nourdaghash.SignInActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonGoLogIn,buttonGoToRegister;

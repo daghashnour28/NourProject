@@ -8,6 +8,8 @@ import android.content.Intent;
 
 import androidx.annotation.Nullable;
 
+import com.example.nourdaghash.Activity.MainActivity;
+
 public class  Receiver extends BroadcastReceiver {
     @
             Override
