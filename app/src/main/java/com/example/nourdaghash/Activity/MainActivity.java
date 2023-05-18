@@ -3,6 +3,7 @@ package com.example.nourdaghash.Activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -25,12 +26,16 @@ import com.example.nourdaghash.SignInActivity;
 public class MainActivity extends AppCompatActivity {
     private Button buttonGoLogIn,buttonGoToRegister;
     private TextView textViewBakey;
-
+private RecyclerView.Adapter adapter,adapter2;
+private RecyclerView.recyclerViewCategory,recyclerViewPopularList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().getDecorView().setLayoutDirection(textViewBakey.LAYOUT_DIRECTION_INHERIT);
+        RecyclerViewCategory()
+
 
         buttonGoLogIn = findViewById(R.id.buttonGoSignIn);
         buttonGoToRegister = findViewById(R.id.buttonGoToRegister);
