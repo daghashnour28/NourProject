@@ -3,6 +3,7 @@ package com.example.nourdaghash.Activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlarmManager;
@@ -18,10 +19,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.nourdaghash.Adapter.CategoryAdapter;
+import com.example.nourdaghash.Domain.CategoryDomain;
 import com.example.nourdaghash.R;
 import com.example.nourdaghash.Receiver;
 import com.example.nourdaghash.RegisterActivity;
 import com.example.nourdaghash.SignInActivity;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonGoLogIn,buttonGoToRegister;
@@ -34,7 +39,21 @@ private RecyclerView.recyclerViewCategory,recyclerViewPopularList;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getWindow().getDecorView().setLayoutDirection(textViewBakey.LAYOUT_DIRECTION_INHERIT);
-        RecyclerViewCategory()
+        recyclerViewCategory();
+
+        private void recyclerViewCategory(){
+            LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+            recyclerViewCategory=findViewById(R.id.view1);
+            recyclerViewCategory.setLayoutManager(linearLayoutManager);
+
+            ArrayList<CategoryDomain> categoryList=new ArrayList<>();
+            categoryList.add(new CategoryDomain("cakes","cake.png"));
+            categoryList.add(new CategoryDomain("cookies","cookie.png"));
+            categoryList.add(new CategoryDomain("cupcakes","cupcake.jpg"));
+
+            adapter=new CategoryAdapter(categoryList);
+            recyclerViewCategory.setAdapter(adapter)
+        }
 
 
         buttonGoLogIn = findViewById(R.id.buttonGoSignIn);

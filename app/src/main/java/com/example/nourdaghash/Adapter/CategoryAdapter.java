@@ -18,6 +18,11 @@ import java.util.ArrayList;
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHolder> {
     ArrayList<CategoryDomain> categoryDomains;
 
+
+    public CategoryAdapter(ArrayList<CategoryDomain> categoryDomains) {
+        this.categoryDomains = categoryDomains;
+    }
+
     @NonNull
     @Override
     public ViewHolderlder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -57,7 +62,7 @@ Glide.with(holder.itemView.getContext())
 
     @Override
     public int getItemCount() {
-        return 0;
+        return categoryDomains.size() ;
     }
     public class viewHolder extends RecyclerView.ViewHolder{
         TextView categoryName;
