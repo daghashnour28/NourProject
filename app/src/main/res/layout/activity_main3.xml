@@ -115,14 +115,14 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/view1"
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:clipToPadding="false"
-                        android:paddingStart="24dp"
-                        android:paddingEnd="24dp"
+                        android:paddingStart="22dp"
 
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="23dp" />
+                        android:paddingEnd="22dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="0dp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
@@ -142,11 +142,11 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="212dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:clipToPadding="false"
-                android:paddingStart="24dp"
-                android:paddingEnd="24dp"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp"
 
                 />
 
