@@ -129,37 +129,39 @@
                         android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:layout_margin="20dp"
-                        android:layout_marginStart="16dp"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:layout_editor_absoluteY="3dp">
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="34dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="bottom"
+                            android:gravity="center"
                             android:orientation="vertical">
-
-                            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/cake"
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="20dp"
-                                android:text="CAKES"
-                                android:textSize="20sp" />
 
                         </LinearLayout>
 
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:src="@drawable/cookie" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="10dp"
+                            android:text="COOKIES"
+                            android:textSize="14sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
                     </androidx.cardview.widget.CardView>
-
-
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="120dp"
@@ -167,35 +169,80 @@
                         android:layout_margin="20dp"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="10dp"
-                        tools:layout_editor_absoluteX="148dp"
-                        tools:layout_editor_absoluteY="3dp">
+                        tools:layout_editor_absoluteX="129dp"
+                        tools:layout_editor_absoluteY="34dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="bottom"
+                            android:gravity="center"
                             android:orientation="vertical">
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="20dp"
-                                android:text="Cupcakes"
-                                android:textSize="20sp" />
 
                         </LinearLayout>
 
-                        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/cu">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/cake" />
 
-                        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+                        <TextView
+                            android:id="@+id/textCakes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="10dp"
+                            android:text="CAKES"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
 
                     </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        tools:layout_editor_absoluteX="259dp"
+                        tools:layout_editor_absoluteY="34dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:src="@drawable/" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="10dp"
+                            android:text="CUPCAKES"
+                            android:textSize="14sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+
                     <![CDATA[
+
 
 
 
@@ -207,6 +254,26 @@
                         tools:layout_editor_absoluteX="16dp" />
                 ]]>
                 </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".Horizontal_ScrollView">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
             </LinearLayout>
 
             <TextView
@@ -231,44 +298,12 @@
                 android:paddingStart="22dp"
                 android:paddingEnd="22dp"
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="20dp"
-                android:layout_marginStart="16dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="26dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="bottom"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/cake"
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="20dp"
-                        android:text="CAKES"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
                 />
 
         </LinearLayout>
     </ScrollView>
+
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
