@@ -15,6 +15,18 @@
         android:theme="@style/Theme.NourDaghash"
         tools:targetApi="31">
         <activity
+            android:name=".redVelvet_cookies"
+            android:exported="false" />
+        <activity
+            android:name=".double_Cookie"
+            android:exported="false" />
+        <activity
+            android:name=".smoers_cookies"
+            android:exported="false" />
+        <activity
+            android:name=".chocloate_chip_Cookies"
+            android:exported="false" />
+        <activity
             android:name=".berryCream_cake"
             android:exported="false" />
         <activity

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    tools:context=".redVelvet_cookies">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Red Velvet Chocolate Chip Cookies"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGREDIENTS"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+
+2 and 1/4 cups (281g) all-purpose flour (spoon & leveled)
+1 teaspoon baking soda
+1 and 1/2 teaspoons cornstarch
+1/2 teaspoon salt
+3/4 cup (170g) unsalted butter, melted
+3/4 cup (135g) light brown sugar, loosely packed
+1/2 cup (100g) granulated sugar
+1 large egg + 1 egg yolk, at room temperature
+2 teaspoons pure vanilla extract
+1 cup (180g) semi-sweet chocolate chips
+Topping"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 ounces semi-sweet chocolate, chopped (or more chocolate chips)
+2 full sheet graham crackers, broken into pieces
+1/2 cup miniature marshmallows"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
