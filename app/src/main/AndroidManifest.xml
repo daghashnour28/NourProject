@@ -15,6 +15,18 @@
         android:theme="@style/Theme.NourDaghash"
         tools:targetApi="31">
         <activity
+            android:name=".berryCream_cake"
+            android:exported="false" />
+        <activity
+            android:name=".lemonBlueberry_cake"
+            android:exported="false" />
+        <activity
+            android:name=".noBake_CheeseCake"
+            android:exported="false" />
+        <activity
+            android:name=".choclate_cake"
+            android:exported="false" />
+        <activity
             android:name=".cupcakes_activity"
             android:exported="false" />
         <activity

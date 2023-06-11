@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".berryCream_cake">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Fresh Berry Cream Cake "
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGREDIENTS"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+
+2 and 1/2 cups (285g) cake flour (spooned & leveled)
+2 teaspoons baking powder
+1/2 teaspoon baking soda
+1 teaspoon salt
+3/4 cup (170g) unsalted butter, softened to room temperature
+1 and 3/4 cups (350g) granulated sugar
+5 large egg whites, at room temperature
+1/2 cup (120g) sour cream, at room temperature*
+1 Tablespoon pure vanilla extract (yes, Tbsp!)
+1 cup (240ml) whole milk, at room temperature*"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whipped Cream & Berries :"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 cups (480ml) cold heavy cream or heavy whipping cream
+1/3 cup (5 Tablespoons; 40g) confectioners’ sugar
+1 teaspoon pure vanilla extract
+1/2 teaspoon almond extract (optional)"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="483dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

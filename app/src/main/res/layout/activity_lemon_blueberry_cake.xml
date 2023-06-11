@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lemon_blurberry_cake"
+    tools:context=".lemonBlueberry_cake">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Lemon Blueberry Layer Cake"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGREDIENTS"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+1 cup (230g) unsalted butter, softened to room temperature
+1 and 1/4 cups (250g) granulated sugar
+1/2 cup (100g) packed light brown sugar
+4 large eggs, at room temperature*
+1 Tablespoon pure vanilla extract
+3 cups (354g) sifted all-purpose flour (spooned & leveled)*
+1 Tablespoon baking powder
+1/2 teaspoon salt
+1 cup (240ml) buttermilk*
+2 Tablespoons lemon zest*
+1/2 cup (120ml) lemon juice (3 medium lemons)*
+1 and 1/2 cups blueberries, fresh (258g) or frozen (do not thaw—275g)
+1 Tablespoon all-purpose flour"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        tools:layout_editor_absoluteX="0dp"
+
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cream Cheese Frosting"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/2 cup (115g) unsalted butter, softened to room temperature
+3 and 1/2 cups (420g) confectioners’ sugar
+1 – 2 Tablespoons (15-30ml) heavy cream*
+1 teaspoon pure vanilla extract
+pinch salt"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="499dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
