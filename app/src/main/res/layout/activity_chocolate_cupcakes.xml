@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_7"
+    tools:context=".chocolate_cupcakes">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Super Moist Chocolate Cupcakes  "
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGREDIENTS"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+
+3/4 cup (94g) all-purpose flour (spooned & leveled)
+1/2 cup (41g) unsweetened natural cocoa powder
+3/4 teaspoon baking powder
+1/2 teaspoon baking soda
+1/4 teaspoon salt
+2 large eggs, at room temperature*
+1/2 cup (100g) granulated sugar
+1/2 cup (100g) packed light brown sugar
+1/3 cup (80ml) vegetable or canola oil (or melted coconut oil)
+2 teaspoons pure vanilla extract
+1/2 cup (120ml) buttermilk, at room temperature*"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings :"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate Buttercream or Vanilla Buttercream
+sprinkles (optional)"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
