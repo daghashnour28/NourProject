@@ -8,15 +8,6 @@
     tools:context=".cookies_activity">
 
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CAKES"
-        android:textSize="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="84dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -54,7 +45,8 @@
                     android:paddingLeft="1in"
                     android:text="Chewy Chocolate Chip Cookies"
                     android:textSize="25sp"
-                    android:textStyle="italic"
+                    android:textStyle="italic">
+                </TextView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
