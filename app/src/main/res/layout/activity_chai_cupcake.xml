@@ -64,27 +64,4 @@
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="307dp" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1 bag chai tea
-1/2 cup (120ml) whole milk, at room temperature
-1 and 3/4 cups (207g) cake flour* (spoon & leveled)
-3 and 1/2 teaspoons chai spice mix (above)
-3/4 teaspoon baking powder
-1/4 teaspoon baking soda
-1/4 teaspoon salt
-1/2 cup (115g) unsalted butter, softened to room temperature
-1 cup (200g) granulated sugar
-3 large egg whites, at room temperature*
-
-2 teaspoons pure vanilla extract
-1/2 cup (120g) sour cream or plain yogurt, at room temperature
-Chai Spice Buttercream"
-        android:textColor="@color/black"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="350dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

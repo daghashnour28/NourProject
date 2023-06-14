@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:text="
 
-2 and 1/2 cups (285g) cake flour (spooned & leveled)
+2 and 1/2 cups (285g) cake flour (spooned  leveled)
 2 teaspoons baking powder
 1/2 teaspoon baking soda
 1 teaspoon salt
@@ -54,7 +54,7 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Whipped Cream & Berries :"
+        android:text="Whipped Cream  Berries :"
         android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
